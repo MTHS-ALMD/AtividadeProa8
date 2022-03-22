@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <script>
+        var inicioKm= parseInt(window.prompt("Digite a marcação do odômetro (KM) do início do dia"))
+        var finalKm= parseInt(window.prompt("Digite a marcação do odômetro (KM) do final do dia"))
+        var gastoDia= parseInt(window.prompt("Quantos litros foram gastos"))
+        var ganhoDia= parseInt(window.prompt("Qual foi o valor ganho no dia"))
+
+        var kmRodado= inicioKm-finalKm
+        var kmPorLitro=kmRodado/gastoDia
+        var gastoGasolina=gastoDia*2.90
+        var lucroDia=ganhoDia-gastoGasolina
+
+        window.alert(`${kmRodado} KM rodados, ${kmPorLitro} Litros de gasolina gasto, ${gastoGasolina} Gasto com Gasolina e o Lucro foi de ${lucroDia}`)
+    </script>
+</body>
+</html>

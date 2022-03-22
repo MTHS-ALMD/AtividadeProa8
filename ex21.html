@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 21</title>
+</head>
+<body>
+    <script>
+        var nota1= parseInt(window.prompt("Digite a primeira nota"))
+        var nota2= parseInt(window.prompt("Digite a segunda nota"))
+        var nota3= parseInt(window.prompt("Digite a nota da prova substutiva"))
+
+        if(nota1<nota3){
+            nota1=nota3
+        }else if(nota2<nota3){
+            nota2=nota3
+        }
+
+        media=nota1+nota2
+        
+        if(media>=6){
+            window.alert("Aprovado")
+        }else if(media<3){
+            window.alert("Reprovado")
+        }else if(media >=3 && media<6){
+            window.alert("Exame")
+        }
+    </script>
+</body>
+</html>

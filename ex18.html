@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+</head>
+<body>
+    <script>
+        var altura=parseFloat(window.prompt("Digite sua altura"))
+        var sexo=parseInt(window.prompt("Digite seu sexo, sendo [1]HOMEM e [2]MULHER"))
+        if(sexo==1){
+            resulHomem=(72.7*altura)-58
+            window.alert(`Seu peso ideal seria ${resulHomem}`)
+        }else if(sexo==2){
+            resulMulher=(62.1*altura)-58
+            window.alert(`Seu peso ideal seria ${resulMulher}`)
+        }
+    </script>
+</body>
+</html>
